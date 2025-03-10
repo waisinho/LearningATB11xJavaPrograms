@@ -1,7 +1,7 @@
 package ex_01_Java_Basic;
 
-public class HelloWorld {
+public class Lab010_Keywords_Identifier {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println("Hi");
     }
 }
