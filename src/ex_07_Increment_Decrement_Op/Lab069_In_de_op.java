@@ -13,5 +13,6 @@ public class Lab069_In_de_op {
         System.out.println(a1);
         System.out.println(a2);
         System.out.println(a3);
+
     }
 }
