@@ -2,6 +2,9 @@ package ex_13_Functions;
 
 import java.util.Scanner;
 
+/**
+ * This class provides basic arithmetic operations.
+ */
 public class Lab134_Function_Arth {
     public static void main(String[] args) {
         // Create a Function of Sub, Sum, Mul and Div
@@ -53,22 +56,50 @@ public class Lab134_Function_Arth {
 
     }
 
+    /**
+     * Adds two integers.
+     *
+     * @param a the first integer
+     * @param b the second integer
+     * @return the sum of a and b
+     */
     static int sum(int a, int b) {
         return a + b;
     }
 
+    /**
+     * Subtracts the second integer from the first.
+     *
+     * @param a the first integer
+     * @param b the second integer
+     * @return the difference of a and b
+     */
     static int sub(int a, int b) {
         return a - b;
     }
 
-    static int div(int a, int b) {
+    /**
+     * Divides the first integer by the second.
+     *
+     * @param a the dividend
+     * @param b the divisor
+     * @return the quotient of a and b
+     * @throws ArithmeticException if b is zero
+     */
+    static int div(int a, int b) throws ArithmeticException {
         if (b == 0) {
-            System.out.println("Div by zero is not allowed");
-            System.exit(0);
+            throw new ArithmeticException("Division by zero is not allowed.");
         }
         return a / b;
     }
 
+    /**
+     * Multiplies two integers.
+     *
+     * @param a the first integer
+     * @param b the second integer
+     * @return the product of a and b
+     */
     static int mul(int a, int b) {
         return a * b;
     }
